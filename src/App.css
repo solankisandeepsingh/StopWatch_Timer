@@ -1,38 +1,95 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background: teal;
+  /* max-width: 600px; */
+  width: 50%;
+  height: auto;
+  margin: 100px auto;
+  /* border-radius: 20px; */
+}
+.clock-header {
+  width: 100%;
+  background: palevioletred;
+  margin: 30px auto;
+  position: relative;
+}
+h1{
+    text-align: center;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.stopwatch {
+  padding: 20px 0px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.stopwatch span {
+  background: lightseagreen;
   color: white;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 15px;
+  padding: 15px;
 }
+/* .stopwatch .btn-start{
+    font-size: 25px;
+    marg
+} */
 
-.App-link {
-  color: #61dafb;
+.stopwatch .btn-start {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  height: 50px;
+  width: 100px;
+  background-color: crimson;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  /* border-bottom: 2px solid black; */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stopwatch .btn-start:hover {
+  background-color: dimgray;
+  color: darkred;
+}
+.stopwatch .btn-stop {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  height: 50px;
+  width: 100px;
+  background-color: greenyellow;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+.stopwatch .btn-reset {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  height: 50px;
+  width: 100px;
+  /* background-color: olivedrab; */
+  background-color: green;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+.stopwatch .btn-resume {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  height: 50px;
+  width: 100px;
+  background-color: seagreen;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 20px;
 }
